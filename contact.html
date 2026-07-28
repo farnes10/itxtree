@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — ITXTREE</title>
+<meta name="description" content="Contactez ITXTREE pour discuter de votre projet web, mobile, desktop, IoT, design ou vidéo.">
+<link rel="icon" type="image/png" href="assets/Asset 6@2x.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Nos projets</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">// parlons de votre projet</span>
+    <h1>Démarrons la conversation.</h1>
+    <p class="lead">Décrivez-nous votre besoin en quelques lignes — web, mobile, desktop, IoT, design ou vidéo. Nous revenons vers vous rapidement.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <form id="contact-form" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          <span class="field-error">Merci d'indiquer votre nom.</span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          <span class="field-error">Merci d'indiquer une adresse email valide.</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Développement web, application mobile, IoT...">
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Décrivez votre projet, vos délais et vos objectifs." required maxlength="600"></textarea>
+        <div class="field-footer">
+          <span class="field-error">Merci de décrire votre projet.</span>
+          <span class="char-count" id="messageCount">0 / 600</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Envoyer le message</button>
+      <div class="form-msg" id="form-msg">
+        <span class="node-dot"></span>
+        <span>Message envoyé — nous revenons vers vous rapidement.</span>
+      </div>
+    </form>
+
+    <div>
+      <div class="contact-info-card">
+        <span class="node-dot"></span>
+        <div>
+          <h4>Email</h4>
+          <span class="copy-row">
+            <a href="mailto:contact@itxtree.com">contact@itxtree.com</a>
+            <button type="button" class="copy-btn" data-copy="contact@itxtree.com" aria-label="Copier l'adresse email">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5.5" y="5.5" width="8" height="8" rx="1.3" stroke="currentColor" stroke-width="1.3"/><path d="M3 10.5V3.8A1.3 1.3 0 0 1 4.3 2.5h6.7" stroke="currentColor" stroke-width="1.3"/></svg>
+            </button>
+            <span class="copy-tooltip">Copié</span>
+          </span>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <span class="node-dot"></span>
+        <div>
+          <h4>Téléphone</h4>
+          <span class="copy-row">
+            <a href="tel:+21600000000">+216 00 000 000</a>
+            <button type="button" class="copy-btn" data-copy="+21600000000" aria-label="Copier le numéro de téléphone">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5.5" y="5.5" width="8" height="8" rx="1.3" stroke="currentColor" stroke-width="1.3"/><path d="M3 10.5V3.8A1.3 1.3 0 0 1 4.3 2.5h6.7" stroke="currentColor" stroke-width="1.3"/></svg>
+            </button>
+            <span class="copy-tooltip">Copié</span>
+          </span>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <span class="node-dot"></span>
+        <div>
+          <h4>Adresse</h4>
+          <p>Tunis, Tunisie</p>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <span class="node-dot"></span>
+        <div>
+          <h4>Délai de réponse</h4>
+          <p>Nous répondons généralement sous 1 à 2 jours ouvrés.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+        </div>
+        <p>Tech Solutions Development. Développement web, mobile, desktop, IoT, design graphique et vidéo.</p>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projects.html">Nos projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Expertises</h5>
+        <ul>
+          <li><a href="index.html#expertise">Web &amp; Mobile</a></li>
+          <li><a href="index.html#expertise">Desktop</a></li>
+          <li><a href="index.html#expertise">IoT</a></li>
+          <li><a href="index.html#expertise">Design &amp; Vidéo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@itxtree.com">contact@itxtree.com</a></li>
+          <li><a href="contact.html">Envoyer un message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> ITXTREE. Tous droits réservés.</span>
+      <span class="mono">// tech solutions development</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Revenir en haut de la page">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

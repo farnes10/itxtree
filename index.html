@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITXTREE — Développement web, mobile, IoT & design</title>
+<meta name="description" content="ITXTREE conçoit des solutions numériques sur mesure : développement web & mobile, applications desktop, IoT, design graphique et vidéo.">
+<link rel="icon" type="image/png" href="assets/Asset 6@2x.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Nos projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">// solutions tech sur-mesure</span>
+      <h1>Une racine technique, <em>cinq branches</em> de savoir-faire.</h1>
+      <p class="lead">ITXTREE conçoit, développe et donne vie à des produits numériques : applications web et mobiles, logiciels desktop, objets connectés, identités visuelles et contenus vidéo.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">Découvrir nos projets</a>
+        <a href="contact.html" class="btn btn-ghost">Démarrer un projet</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow-green" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur2"/>
+            <feMerge>
+              <feMergeNode in="blur2"/>
+              <feMergeNode in="blur1"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+          <filter id="glow-blue" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1"/>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur2"/>
+            <feMerge>
+              <feMergeNode in="blur2"/>
+              <feMergeNode in="blur1"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <path class="tree-trunk" d="M150,340 L150,180"/>
+        
+        <path class="tree-branch b-green" d="M150,180 C150,140 45,140 45,90" filter="url(#glow-green)"/>
+        <path class="tree-branch b-blue"  d="M150,180 C150,115 100,115 100,60" filter="url(#glow-blue)"/>
+        <path class="tree-branch b-blue"  d="M150,180 C150,115 200,115 200,60" filter="url(#glow-blue)"/>
+        <path class="tree-branch b-green" d="M150,180 C150,140 255,140 255,90" filter="url(#glow-green)"/>
+        <path class="tree-branch" d="M150,180 L150,40"/>
+
+        <circle class="tree-node n-dim" cx="150" cy="340" r="14" filter="url(#glow-green)"/>
+        <circle class="tree-node n-dim n6" cx="80" cy="120" r="5"/>
+        <circle class="tree-node n-dim n7" cx="220" cy="120" r="5"/>
+
+        <circle class="tree-node n-main n1" cx="45" cy="90" r="11" filter="url(#glow-green)"/>
+        <circle class="tree-node n-blue n2" cx="100" cy="60" r="11" filter="url(#glow-blue)"/>
+        <circle class="tree-node n-dim  n3" cx="150" cy="40" r="11"/>
+        <circle class="tree-node n-blue n4" cx="200" cy="60" r="11" filter="url(#glow-blue)"/>
+        <circle class="tree-node n-main n5" cx="255" cy="90" r="11" filter="url(#glow-green)"/>
+
+        <text class="tree-label" x="45" y="65" text-anchor="middle">web &amp; mobile</text>
+        <text class="tree-label" x="100" y="35" text-anchor="middle">desktop</text>
+        <text class="tree-label" x="150" y="18" text-anchor="middle">iot</text>
+        <text class="tree-label" x="200" y="35" text-anchor="middle">design</text>
+        <text class="tree-label" x="255" y="65" text-anchor="middle">vidéo</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section class="section section-tight" id="expertise">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">nos branches d'expertise</span>
+      <h2>Cinq expertises, un seul interlocuteur.</h2>
+      <p>Chaque branche est pensée pour se combiner aux autres : un produit web peut embarquer de l'IoT, une identité visuelle peut se prolonger en motion design.</p>
+    </div>
+
+    <div class="grid grid-5 branch-row">
+      <div class="card">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Web &amp; Mobile</h3>
+        <p>Applications web et mobiles robustes, pensées pour vos utilisateurs et vos objectifs métier.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3>Desktop</h3>
+        <p>Logiciels desktop performants et multiplateformes, adaptés aux besoins spécifiques de votre organisation.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>IoT</h3>
+        <p>Solutions connectées qui relient vos équipements, capteurs et données en temps réel.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 20l6-7 4 4 3-4 5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Infographie &amp; Design</h3>
+        <p>Identités visuelles et supports print/digital qui donnent du caractère à votre marque.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="14" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M17 10l4-2.5v9L17 14" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Vidéo &amp; Motion</h3>
+        <p>Montage vidéo et animations qui racontent votre histoire avec impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">notre méthode</span>
+      <h2>Comment nous travaillons.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="idx">01</span>
+        <h4>Écoute</h4>
+        <p>On cadre vos objectifs, vos contraintes et votre contexte métier avant d'écrire la moindre ligne de code.</p>
+      </div>
+      <div class="step">
+        <span class="idx">02</span>
+        <h4>Conception</h4>
+        <p>Architecture technique, maquettes et choix visuels sont validés avec vous avant le développement.</p>
+      </div>
+      <div class="step">
+        <span class="idx">03</span>
+        <h4>Développement</h4>
+        <p>Nous construisons par itérations courtes, avec des points d'avancement réguliers.</p>
+      </div>
+      <div class="step">
+        <span class="idx">04</span>
+        <h4>Livraison &amp; suivi</h4>
+        <p>Mise en production accompagnée, puis suivi et évolutions selon vos retours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Un projet en tête ?</h2>
+        <p>Parlons-en — la première conversation ne coûte rien.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+        </div>
+        <p>Tech Solutions Development. Développement web, mobile, desktop, IoT, design graphique et vidéo.</p>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projects.html">Nos projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Expertises</h5>
+        <ul>
+          <li><a href="index.html#expertise">Web &amp; Mobile</a></li>
+          <li><a href="index.html#expertise">Desktop</a></li>
+          <li><a href="index.html#expertise">IoT</a></li>
+          <li><a href="index.html#expertise">Design &amp; Vidéo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@itxtree.com">contact@itxtree.com</a></li>
+          <li><a href="contact.html">Envoyer un message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> ITXTREE. Tous droits réservés.</span>
+      <span class="mono">// tech solutions development</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Revenir en haut de la page">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
