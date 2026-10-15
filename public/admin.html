@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Ajouter un projet</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .admin-container { max-width: 600px; margin: 100px auto; padding: 2rem; background: var(--bg-surface); border-radius: 12px; }
+  .field { margin-bottom: 1rem; }
+  .field label { display: block; margin-bottom: 0.5rem; }
+  .field input, .field textarea, .field select { width: 100%; padding: 0.5rem; }
+</style>
+</head>
+<body>
+<div class="admin-container">
+  <h2>Ajouter un projet</h2>
+  <form id="add-project-form">
+    <div class="field">
+      <label>Catégorie (ex: web, mobile, desktop, iot, design, video)</label>
+      <input type="text" id="p-category" required>
+    </div>
+    <div class="field">
+      <label>Titre</label>
+      <input type="text" id="p-title" required>
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <textarea id="p-desc" required></textarea>
+    </div>
+    <div class="field">
+      <label>Stack (séparé par des virgules, ex: React, Node.js)</label>
+      <input type="text" id="p-stack" required>
+    </div>
+    <div class="field">
+      <label>Type de miniature</label>
+      <select id="p-thumb-type">
+        <option value="svg">SVG (Code)</option>
+        <option value="image">URL Image</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Contenu de la miniature (Code SVG ou URL)</label>
+      <textarea id="p-thumb-content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter le projet</button>
+    <div id="admin-msg" style="margin-top: 1rem; color: var(--green);"></div>
+  </form>
+</div>
+<script>
+document.getElementById('add-project-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = {
+    category: document.getElementById('p-category').value,
+    title: document.getElementById('p-title').value,
+    description: document.getElementById('p-desc').value,
+    stack: document.getElementById('p-stack').value,
+    thumb_type: document.getElementById('p-thumb-type').value,
+    thumb_content: document.getElementById('p-thumb-content').value
+  };
+
+  const res = await fetch('/api/projects', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  const result = await res.json();
+  if (result.success) {
+    document.getElementById('admin-msg').textContent = 'Projet ajouté avec succès !';
+    document.getElementById('admin-msg').style.color = 'var(--green)';
+    document.getElementById('add-project-form').reset();
+  } else {
+    document.getElementById('admin-msg').textContent = 'Erreur lors de l\'ajout.';
+    document.getElementById('admin-msg').style.color = 'red';
+  }
+});
+</script>
+</body>
+</html>

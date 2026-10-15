@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos projets — ITXTREE</title>
+<meta name="description" content="Exemples de réalisations ITXTREE : web, mobile, desktop, IoT, design graphique et vidéo.">
+<link rel="icon" type="image/png" href="assets/Asset 6@2x.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html" class="active" aria-current="page">Nos projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Nous contacter</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">// réalisations</span>
+    <h1>Nos projets, branche par branche.</h1>
+    <p class="lead">Un aperçu de nos réalisations en développement web &amp; mobile, desktop, IoT, design graphique et vidéo.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <div class="note-banner">
+      <span class="node-dot"></span>
+      <span>Cette page présente des exemples types de projets par domaine d'expertise. Contactez-nous pour consulter des études de cas détaillées et des références clients.</span>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="web">Web &amp; Mobile</button>
+      <button class="filter-btn" data-filter="desktop">Desktop</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+      <button class="filter-btn" data-filter="design">Design graphique</button>
+      <button class="filter-btn" data-filter="video">Vidéo &amp; Motion</button>
+    </div>
+
+    <div class="grid grid-3">
+       <!-- Les projets seront chargés dynamiquement ici par main.js -->
+       <p>Chargement des projets...</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Votre projet pourrait être le prochain.</h2>
+        <p>Décrivez-nous votre besoin, on vous propose une approche concrète.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="assets/Asset%2011@2x.png" alt="Logo" style="height:48px; width:auto;">
+        </div>
+        <p>Tech Solutions Development. Développement web, mobile, desktop, IoT, design graphique et vidéo.</p>
+      </div>
+      <div>
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projects.html">Nos projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Expertises</h5>
+        <ul>
+          <li><a href="index.html#expertise">Web &amp; Mobile</a></li>
+          <li><a href="index.html#expertise">Desktop</a></li>
+          <li><a href="index.html#expertise">IoT</a></li>
+          <li><a href="index.html#expertise">Design &amp; Vidéo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@itxtree.com">contact.itxtree@gmail.com</a></li>
+          <li><a href="contact.html">Envoyer un message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> ITXTREE. Tous droits réservés.</span>
+      <span class="mono">// tech solutions development</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Revenir en haut de la page">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

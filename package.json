@@ -1,0 +1,30 @@
+{
+  "name": "itxtree-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itxtreedev-create/itxtree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/itxtreedev-create/itxtree/issues"
+  },
+  "homepage": "https://github.com/itxtreedev-create/itxtree#readme",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^2.19.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mailtrap": "^4.8.0",
+    "nodemailer": "^9.0.3",
+    "sqlite3": "^6.0.1"
+  }
+}
